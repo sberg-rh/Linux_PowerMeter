@@ -113,7 +113,7 @@ int main(int argc, char **argv)
 	time_t now;
 	struct tm timeinfo;
 
-	do {
+	//do {
 		if ( strcmp(model,"226") == 0 )
 		{
 			printf("Voltage = %.02f V ", ina226_voltage(hI2C, i2caddr));
@@ -161,8 +161,8 @@ int main(int argc, char **argv)
 			fprintf(fhandle,"\r\n");
 			fflush(fhandle);
 		}
-		sleep(10);
+		//sleep(10);
 
-	} while(1);
+	//} while(1);
 }
 
