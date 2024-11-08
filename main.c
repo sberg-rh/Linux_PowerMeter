@@ -93,7 +93,7 @@ int main(int argc, char **argv)
 			}
 	}
 
-	printf("\r\nInitialising INA%s at addr 0x%02X on %s \r\n", model, i2caddr, devname);
+	//printf("\r\nInitialising INA%s at addr 0x%02X on %s \r\n", model, i2caddr, devname);
 
 	hI2C = i2c_init(devname);
 

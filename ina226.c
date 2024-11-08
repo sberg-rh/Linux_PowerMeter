@@ -31,11 +31,12 @@ void ina226_init(uint32_t i2c_master_port, uint8_t i2c_slave_addr)
 	i2c_write_short(i2c_master_port, i2c_slave_addr, INA226_CFG_REG, 0x4527);	// Average over 16 Samples
 	i2c_write_short(i2c_master_port, i2c_slave_addr, INA226_CAL_REG, 1024);	// 1A, 0.100Ohm Resistor
 
-	printf("Manufacturer ID:        0x%04X\r\n",i2c_read_short(i2c_master_port, i2c_slave_addr, INA226_MANUFACTURER_ID));
-	printf("Die ID Register:        0x%04X\r\n",i2c_read_short(i2c_master_port, i2c_slave_addr, INA226_DIE_ID));
-	printf("Configuration Register: 0x%04X\r\n",i2c_read_short(i2c_master_port, i2c_slave_addr, INA226_CFG_REG));
-	printf("\r\n");
-	sleep(1);
+	//printf("Manufacturer ID:        0x%04X\r\n",i2c_read_short(i2c_master_port, i2c_slave_addr, INA226_MANUFACTURER_ID));
+	//printf("Die ID Register:        0x%04X\r\n",i2c_read_short(i2c_master_port, i2c_slave_addr, INA226_DIE_ID));
+	//printf("Configuration Register: 0x%04X\r\n",i2c_read_short(i2c_master_port, i2c_slave_addr, INA226_CFG_REG));
+	//printf("\r\n");
+	//sleep(1);
+    usleep(40000);
 }
 
 float ina226_voltage(uint32_t i2c_master_port, uint8_t i2c_slave_addr)
