@@ -52,7 +52,7 @@ int main(int argc, char **argv)
 	bool logtofile = false;
 	bool reset = false;
 
-	printf("Power Meter\r\nhttps://github.com/craigpeacock/Linux_I2C\r\n");
+	//printf("Power Meter\r\nhttps://github.com/craigpeacock/Linux_I2C\r\n");
 
 	int opt;
 
